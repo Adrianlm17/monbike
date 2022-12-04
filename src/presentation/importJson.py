@@ -6,7 +6,7 @@ import json
 def importarDatos():
     
     # Abrimos el archivo JSON en modo de lectura y cargamos los datos en la variable "bicicletas"
-    with open("../monbike/src/database/bicis.json", encoding="utf-8") as datos:
+    with open("../monbike/JSON/bicis.json", encoding="utf-8") as datos:
         bicicletas = datos.read()
 
         # Cargar los datos de la variable "bicicletas" en una variable llamada "bicis"

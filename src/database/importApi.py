@@ -30,6 +30,7 @@ def importarInfoAPI():
     result = (datosApi.text)    
     result = json.loads(result)
 
+  # Agrego una pequeña verificación de la API (en caso de error nos mandara un error o otro)
   except requests.exceptions.Timeout:    
     print("Error: Timeout")    
     SystemExit()
@@ -40,7 +41,7 @@ def importarInfoAPI():
 
   else: 
     # Metemos todo en un documento JSON 
-    api_mongodb = open("../monbike/src/database/bicis.json", "w", encoding="utf-8")
+    api_mongodb = open("../monbike/JSON/bicis.json", "w", encoding="utf-8")
     General = json.dump(result["documents"],api_mongodb, indent=4, ensure_ascii=False)    
     api_mongodb.close
 

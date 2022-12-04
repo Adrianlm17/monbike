@@ -2,7 +2,6 @@
 import json
 from importJson import importarDatos
 
-
 bicis = importarDatos()
 
 

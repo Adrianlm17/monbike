@@ -19,13 +19,11 @@ head = f'''<!Doctype html>
     </head>\n''' 
 
 body = "    <body>\n"
+
+
 fin_body = "    </body>\n"
 
 br = "<br>\n"
-
-footer = f'''<footer id="main-footer">
-            <p>&copy; 2022 por Adrián López</p>
-        </footer>\n'''
 
 
 # Variables para la pagina donde aparece todas las bicis

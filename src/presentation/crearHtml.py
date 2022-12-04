@@ -6,7 +6,7 @@ bicis = importarDatos()
 
 
 # Aqui ejecutamos el codigo que nos crea/sobre escribe "index.html" en el directorio "docs" y le ponemos la siguiente estructura HTML:
-index_html = open("../monbike/docs/index.html", "w")
+index_html = open("../monbike/docs/index.html", "w", encoding="utf-8")
 
 index_html.write("<!DOCTYPE html>\n")
 index_html.write("<html lang=es>\n")

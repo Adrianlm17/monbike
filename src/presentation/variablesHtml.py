@@ -73,6 +73,9 @@ header = f'''    <header class="menu-header">
 
     <img src="img/img_index_1.jpg" class="img_index_1">\n
 '''
+footer = f'''    <footer id="main-footer">
+      <p>&copy; 2022 por Adrián López</p>
+    </footer>\n'''
 
 body = "  <body>\n"
 fin_body = "  </body>\n"

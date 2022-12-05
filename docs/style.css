@@ -184,17 +184,6 @@ body {
 	border-radius: 10%;
 }
 
-/******************************** FOOTER **********************************/
-
-#main-footer {
-	background: rgb(165, 247, 175);
-	color: rgb(6, 53, 13);
-	text-align: center;
-	padding: 15px;
-	
-}
-
-
 
 /* RESPONSIVE PARA MOVILES DE: ANCHO 415 Maximo y Altura 753 Maximo */
 @media screen and ((max-device-width: 415px) and (max-device-height: 753px)){

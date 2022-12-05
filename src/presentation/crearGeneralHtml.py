@@ -13,6 +13,10 @@ def generarPaginaTodasBicis():
     
     # BODY del HTMl
     general_html.write(body)
+    
+    # HEADER del HTML
+    general_html.write(header)
+
     general_html.write('    <h1 class="titulo_general"> Estas son todas las bicis que tenemos actualmente:</h1>\n')
     general_html.write(div_global)
     

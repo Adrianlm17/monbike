@@ -35,6 +35,7 @@ def generarPaginaTodasBicis():
         i += 1
 
     general_html.write(fin_div_general)
+    general_html.write(footer)
     general_html.write(fin_body)
     general_html.write(fin_html)
 

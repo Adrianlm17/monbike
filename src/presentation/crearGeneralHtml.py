@@ -13,7 +13,7 @@ def generarPaginaTodasBicis():
     
     # BODY del HTMl
     general_html.write(body)
-    general_html.write('<h1 class="titulo_general"> Estas son todas las bicis que tenemos actualmente:</h1>\n')
+    general_html.write('    <h1 class="titulo_general"> Estas son todas las bicis que tenemos actualmente:</h1>\n')
     general_html.write(div_global)
     
 
@@ -21,16 +21,16 @@ def generarPaginaTodasBicis():
     i = 0
     for bici in bicis:
         general_html.write(general_unica_bici)
-        general_html.write("<img src='"+ bicis[i]["img"] +"' class='img_varias_bicis'>\n")
-        general_html.write("<h2>"+ bicis[i]["nombre"] +"</h2>\n")
-        general_html.write('<p>\n 1 Día   - ' + bicis[i]["precio"] + '€ <br>\n 5 Días  - ' + bicis[i]["precio"] + '€ <br>\n 10 Días  - ' + bicis[i]["precio"] + '€ <br>\n  15 Días - ' + bicis[i]["precio"] + '€ <br>\n  30 Días - ' + bicis[i]["precio"] + '€ </p> <br>\n')
-        general_html.write(br)
-        general_html.write("<a href='"+ bicis[i]["_id"] +".html'>ALQUILAR</a>\n")
+        general_html.write("        <img src='"+ bicis[i]["img"] +"' class='img_varias_bicis'>\n")
+        general_html.write("        <h2>"+ bicis[i]["nombre"] +"</h2>\n")
+        general_html.write('        <p>\n          1 Día   - ' + bicis[i]["precio"] + '€ <br>\n          5 Días  - ' + bicis[i]["precio"] + '€ <br>\n          10 Días  - ' + bicis[i]["precio"] + '€ <br>\n          15 Días - ' + bicis[i]["precio"] + '€ <br>\n          30 Días - ' + bicis[i]["precio"] + '€\n        </p>\n')
+        general_html.write(br_global)
+        general_html.write("        <a href='"+ bicis[i]["_id"] +".html'>ALQUILAR</a>\n")
         general_html.write(fin_div)
 
         i += 1
 
-    general_html.write(fin_div)
+    general_html.write(fin_div_general)
     general_html.write(fin_body)
     general_html.write(fin_html)
 

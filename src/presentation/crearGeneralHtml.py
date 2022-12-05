@@ -43,6 +43,7 @@ def generarPaginaTodasBicis():
 
         # Escribe el precio con su respectivo descuento en HTML
         general_html.write('        <p>\n          1 Día   - ' + bicis[i]["precio"] + '€ <br>\n          5 Días  - ' + str(descuentoGrande) + '€ <br>\n          10 Días  - ' + str(descuentoPequeño) + '€ <br>\n          15 Días - ' + str(descuentoPequeño) + '€ <br>\n          30 Días - ' + str(descuentoGrande) + '€\n        </p>\n')
+        
         general_html.write(br_global)
         general_html.write("        <a href='"+ bicis[i]["_id"] +".html'>ALQUILAR</a>\n")
         general_html.write(fin_div)

@@ -1,7 +1,87 @@
-
 # CSS metida en una variable Python 
 css = """
 /**** CSS para Ordenadores  de ANCHO 1366 Minimo y Altura 768 Minimo *****/
+
+/************************* MENU de arriba ********************************/
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font: oblique bold 15px cursive;
+	
+}
+
+/* Oculto el boton de navegador de móvil para ordenadores */
+.boton_navegador_img, .menu_input {
+	display: none;
+}
+
+.menu-header { 
+	background-color: rgb(165, 247, 175);
+	height: 75px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid white;
+	box-shadow: 10px 0 25px black;
+	position: fixed;
+	
+}
+
+.menu-principal {
+	list-style: none;
+	display: flex;
+}
+
+
+.menu-principal > li > a {
+	display: block;
+	padding: 25px 25px;
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+	font: oblique bold 20px cursive;
+}
+
+.menu-principal > li:hover {
+	background-color: rgb(15, 92, 8);
+	border-radius: 10px;
+}
+
+.menu-principal li ul {
+	position: absolute;
+	display: none;
+	background-color: rgb(165, 247, 175);
+	list-style: none;
+	border-bottom: 2px solid white;
+	box-shadow: 8 px 8px 10px black;
+	border-radius: 10px;
+}
+
+.menu-principal li ul li a{
+	text-decoration: none;
+	padding: 10px 15px;
+	color: rgb(0, 0, 0);
+	display: block;
+	font: oblique bold 15px cursive;
+}
+
+.menu-principal li:hover > ul {
+	display: block;
+}
+
+.menu-principal li ul > li:hover {
+	background-color: rgb(15, 92, 8);
+	border-radius: 10px;
+}
+
+/* Logo MonBike */
+.logo {
+	display: flex;
+	height: 100%;
+}
 
 /**********************************  BODY  ***************************************/
 
@@ -109,7 +189,92 @@ body {
 /* RESPONSIVE PARA MOVILES DE: ANCHO 415 Maximo y Altura 753 Maximo */
 @media screen and ((max-device-width: 415px) and (max-device-height: 753px)){
 
-    /*************************  BODY  MÓVIL *****************************/
+	/************************ NAVEGADOR PARA MÓVIL **********************/
+	
+	/* NAVEGADOR */
+	
+	.menu-header { 
+		background-color: rgb(165, 247, 175);
+		height: 8%;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-bottom: 3px solid white;
+		box-shadow: 10px 0 25px black;
+		position: fixed;
+		
+	}
+	
+	.logo {
+		display: flex;
+		height: 90%;
+	}
+
+	.boton_navegador_img {
+		display: block;
+		cursor: pointer;
+		width: 120px;
+		height: 98px;
+	}
+
+	.menu-principal {
+		display: none;
+	}
+	
+	.menu_input:checked + .menu-principal{
+		position: fixed;
+		top: 125px;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		right: 2%;
+		border-radius: 15px;
+		background-color: rgb(124, 202, 157);
+	}
+	
+	.menu-principal > li > a {
+		display: block;
+		padding: 25px 25px;
+		color: rgb(0, 0, 0);
+		text-decoration: none;
+		font: oblique bold 25px cursive;
+		text-align: center;
+	}
+	
+	.menu-principal > li:hover {
+		background-color: rgb(65, 116, 86);
+		border-radius: 10px;
+	}
+	
+	.menu-principal li ul {
+		position: absolute;
+		display: none;
+		background-color: rgb(124, 202, 157);
+		list-style: none;
+		border-bottom: 2px solid white;
+		box-shadow: 8 px 8px 10px black;
+		border-radius: 10px;
+	}
+	
+	.menu-principal li ul li a{
+		text-decoration: none;
+		padding: 10px 15px;
+		color: rgb(0, 0, 0);
+		display: block;
+		font: oblique bold 25px cursive;
+	}
+	
+	.menu-principal li:hover > ul {
+		display: block;
+	}
+	
+	.menu-principal li ul > li:hover {
+		background-color: rgb(65, 116, 86);
+		border-radius: 10px;
+	}
+
+	/*************************  BODY  MÓVIL *****************************/
 
     body {
         background-color: rgb(240, 232, 212);
@@ -197,6 +362,3 @@ body {
 }
 
 """
-
-
-

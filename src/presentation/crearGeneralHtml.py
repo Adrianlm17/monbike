@@ -1,9 +1,18 @@
 # Importamos la libreria JSON
 import json
+
+# Importamos la funcion que contiene todas las bicis
 from importJson import importarDatos
+
+# Importamos todas las variables HTML
 from variablesHtml import *
 
+
+
+# Agregamos a la variable bicis la funcion "importarDatos"
 bicis = importarDatos()
+
+
 
 def generarPaginaTodasBicis():
     general_html = open("../monbike/docs/general.html", "w", encoding="utf-8")
@@ -27,7 +36,13 @@ def generarPaginaTodasBicis():
         general_html.write(general_unica_bici)
         general_html.write("        <img src='"+ bicis[i]["img"] +"' class='img_varias_bicis'>\n")
         general_html.write("        <h2>"+ bicis[i]["nombre"] +"</h2>\n")
-        general_html.write('        <p>\n          1 Día   - ' + bicis[i]["precio"] + '€ <br>\n          5 Días  - ' + bicis[i]["precio"] + '€ <br>\n          10 Días  - ' + bicis[i]["precio"] + '€ <br>\n          15 Días - ' + bicis[i]["precio"] + '€ <br>\n          30 Días - ' + bicis[i]["precio"] + '€\n        </p>\n')
+
+        # Agregamos 2 variables seun descuento segun los dias de alquiler
+        descuentoGrande = int(bicis[i]["precio"]) - 2
+        descuentoPequeño = int(bicis[i]["precio"]) - 1
+
+        # Escribe el precio con su respectivo descuento en HTML
+        general_html.write('        <p>\n          1 Día   - ' + bicis[i]["precio"] + '€ <br>\n          5 Días  - ' + str(descuentoGrande) + '€ <br>\n          10 Días  - ' + str(descuentoPequeño) + '€ <br>\n          15 Días - ' + str(descuentoPequeño) + '€ <br>\n          30 Días - ' + str(descuentoGrande) + '€\n        </p>\n')
         general_html.write(br_global)
         general_html.write("        <a href='"+ bicis[i]["_id"] +".html'>ALQUILAR</a>\n")
         general_html.write(fin_div)

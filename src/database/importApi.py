@@ -1,12 +1,18 @@
 # Importamos las librerias necesarias para la API de MongoDB
 import requests
 import json
+import os
 
 
 def importarInfoAPI():
 
-  # Importamos la URL de la API
-  url = "https://data.mongodb-api.com/app/data-ltnil/endpoint/data/v1/action/find"
+  # Llamamos desde la variable de entorno la URL de la API
+
+  MONGO_URL = os.environ['MONGO_URL']
+  API_KEY = os.environ['API_KEY']
+
+  # Modificamos la URL de la API y añadimos "find"
+  url = MONGO_URL+"/find"
 
 
   # Le indicamos las caracteristicas que vamos a utilizar
@@ -21,7 +27,7 @@ def importarInfoAPI():
   headers = {
     'Content-Type': 'application/json',
     'Access-Control-Request-Headers': '*',
-    'api-key': "nWyp9GCEj1fHBvPJOqpBmX8Kvf53JgMdxSsQOB2U0SkpfmivCUN55Yy5OPzEi2Q9", 
+    'api-key': API_KEY, 
   }
 
   try:    
@@ -34,18 +40,15 @@ def importarInfoAPI():
   except requests.exceptions.Timeout:    
     print("Error: Timeout")    
     SystemExit()
-    
+
   except requests.exceptions.ConnectionError:    
     print("Ha ocurrido un error de Conexión")    
     SystemExit()  
 
   else: 
-    # Metemos todo en un documento JSON 
-    api_mongodb = open("../monbike/JSON/bicis.json", "w", encoding="utf-8")
-    General = json.dump(result["documents"],api_mongodb, indent=4, ensure_ascii=False)    
-    api_mongodb.close
+    print("API Importada con existo!")
+    return result
 
-
-
+  
 
 importarInfoAPI()

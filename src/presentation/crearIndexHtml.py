@@ -13,7 +13,7 @@ def generarIndexHtml():
     index_html.write(body)
 
     index_html.write("<h1> MonBike </h1>\n")
-    index_html.write("<a href='global.html'> TODAS LAS BICIS </a>\n")
+    index_html.write("<a href='general.html'> TODAS LAS BICIS </a>\n")
     index_html.write(fin_body)
     index_html.write("</head>\n")
 

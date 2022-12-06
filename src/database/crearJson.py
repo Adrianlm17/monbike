@@ -1,5 +1,4 @@
 import json
-import os
 
 # Creamos una funcion que nos genere el archivo JSON
 def crearJson(result):

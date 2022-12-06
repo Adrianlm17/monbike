@@ -12,6 +12,7 @@ rutaDocs = os.path.relpath(rutaDocs)
 
 
 
+
 @pytest.mark.test_creadorRutas
 def test_creadorRutas():
 
@@ -20,6 +21,7 @@ def test_creadorRutas():
 
     # La carpeta existe
     assert os.path.exists(rutaDocs) != False
+
 
 
 @pytest.mark.test_verificarDirectorio

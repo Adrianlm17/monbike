@@ -13,6 +13,10 @@ archivoCreado= os.path.relpath(archivoCreado)
 archivoNoCreado = "./docs/NoCreado.html"
 archivoNoCreado= os.path.relpath(archivoNoCreado)
 
+
+
+
+
 @pytest.mark.test_verificarArchivoCreado
 def test_verificarArchivoCreado():
 
@@ -21,6 +25,7 @@ def test_verificarArchivoCreado():
 
     # Es igual a True dado que el archivo esta creado
     assert os.path.exists(archivoCreado) == True
+
 
 
 @pytest.mark.test_verificarArchivoNoCreado

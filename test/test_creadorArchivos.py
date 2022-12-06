@@ -11,6 +11,7 @@ rutaDocs = os.path.relpath(rutaDocs)
 
 
 
+
 @pytest.mark.test_creadorArchivos
 def test_creadorArchivos():
 
@@ -19,6 +20,7 @@ def test_creadorArchivos():
 
     # Verificamos si existe
     assert os.path.exists(rutaDocs) != False
+
 
 
 @pytest.mark.test_verificarArchivo

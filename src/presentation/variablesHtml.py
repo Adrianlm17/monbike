@@ -19,10 +19,10 @@ head = f'''<!Doctype html>
   </head>\n''' 
 
 header = f'''    <header class="menu-header">
-      <img src="https://i.ibb.co/LPH7YSV/icono-monbike.png" class="logo">
+      <img src="https://i.ibb.co/LPH7YSV/icono-monbike.png" class="logo" alt="Logo MonBike">
 
       <label for="menu" class="boton_navegador">
-        <img src="https://i.ibb.co/6Wzb0yY/boton-navegador.png" class="boton_navegador_img">
+        <img src="https://i.ibb.co/6Wzb0yY/boton-navegador.png" class="boton_navegador_img" alt="Menu navegación para móvil">
       </label>
 
       <input type="checkbox" id="menu" class="menu_input">
@@ -71,7 +71,7 @@ header = f'''    <header class="menu-header">
       </ul>
     </header>
 
-    <img src="https://i.ibb.co/Mpq0Y94/img-index-1.jpg" class="img_index_1">\n
+    <img src="https://i.ibb.co/Mpq0Y94/img-index-1.jpg" class="img_index_1" alt="Imagen Bicis con logo>\n
 '''
 footer = f'''    <footer id="main-footer">
       <p>&copy; 2022 por Adrián López</p>

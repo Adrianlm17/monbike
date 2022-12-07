@@ -1,11 +1,8 @@
-# Importamos la libreria JSON
-import json
-
 # Importamos la funcion que contiene todas las bicis
-from importJson import importarDatos
+from presentation.importJson import importarDatos
 
 # Importamos todas las variables HTML
-from variablesHtml import *
+from presentation.variablesHtml import *
 
 
 
@@ -55,4 +52,3 @@ def generarPaginaTodasBicis():
     general_html.write(fin_body)
     general_html.write(fin_html)
 
-generarPaginaTodasBicis()

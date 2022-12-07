@@ -13,5 +13,3 @@ def importarDatos():
         bicis = json.loads(bicicletas)
         return bicis
 
-
-importarDatos()

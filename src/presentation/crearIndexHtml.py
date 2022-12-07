@@ -1,9 +1,5 @@
-# Importamos la libreria JSON
-import json
-from importJson import importarDatos
-from variablesHtml import *
+from presentation.variablesHtml import *
 
-bicis = importarDatos()
 
 def generarIndexHtml():
     # Aqui ejecutamos el codigo que nos crea/sobre escribe "index.html" en el directorio "docs" y le ponemos la siguiente estructura HTML:
@@ -17,5 +13,4 @@ def generarIndexHtml():
     index_html.write(fin_body)
     index_html.write("</head>\n")
 
-generarIndexHtml()
 

@@ -5,8 +5,10 @@ head = f'''<!Doctype html>
 <html LANG="es">
   <head>
     <meta charset="utf-8">
-    <meta name="description" content="Alquila la bici que mas te guste al mejor precio">
+    <meta name="description" content="Web de alquiler de bicis MonBike">
     <meta name="author" content="Adrián López">
+    <meta name="copyright" content="Adrián López">
+    <meta name="generator" content="Monbike">
     <meta name="date" content="27/11/2020">
     <meta name="last-modified" content="04 de Diciembre de 2022">
     <meta name="keyword" content="Bicis, Alquilar bicis, Monbike, Mallorca bicis">

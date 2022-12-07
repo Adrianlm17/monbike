@@ -1,6 +1,5 @@
-# Importamos la libreria JSON
-import json
-from variablesCss import css
+from presentation.variablesCss import css
+
 
 def generarArchivoCss():
     general_html = open("../monbike/docs/style.css", "w", encoding="utf-8")
@@ -9,5 +8,3 @@ def generarArchivoCss():
     general_html.write(css)
     
     general_html.close
-
-generarArchivoCss()

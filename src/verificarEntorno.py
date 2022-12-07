@@ -1,10 +1,5 @@
 # Creamos una Barricada para verificar si las rutas necesarias y archivos estan creadas
 
-# Importamos la libreria OS
-import os
-
-
-
 
 def verificarArchivo(archivo):
     try:
@@ -18,3 +13,15 @@ def verificarArchivo(archivo):
     else: 
         archivoAVerificar.close
         print("El/Los archivo/s ha/n sido verificado/s con exito!")
+
+
+
+# Funcion que verifica los archivo necesarios
+def verificarArchivoNecesario():
+    
+    # Verifica archivos HTML
+    verificarArchivo("..\monbike\docs\index.html")
+    verificarArchivo("..\monbike\docs\general.html")
+    
+    # Verifica archivos CSS
+    verificarArchivo("..\monbike\docs\style.css")

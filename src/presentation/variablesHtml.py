@@ -13,16 +13,16 @@ head = f'''<!Doctype html>
     <link rel="StyleSheet" href="style.css">
     
     <!-- LOGO MonBike-->
-    <link rel="shortcut icon" href="img/monbike_bici_logo.png">
+    <link rel="shortcut icon" href="https://i.ibb.co/LPH7YSV/icono-monbike.png">
     <!-- Titulo MonBike -->
     <title>MonBike</title>
   </head>\n''' 
 
 header = f'''    <header class="menu-header">
-      <img src="img/monbike_bici_logo.png" class="logo">
+      <img src="https://i.ibb.co/LPH7YSV/icono-monbike.png" class="logo">
 
       <label for="menu" class="boton_navegador">
-        <img src="img/boton_navegador.png" class="boton_navegador_img">
+        <img src="https://i.ibb.co/6Wzb0yY/boton-navegador.png" class="boton_navegador_img">
       </label>
 
       <input type="checkbox" id="menu" class="menu_input">
@@ -71,7 +71,7 @@ header = f'''    <header class="menu-header">
       </ul>
     </header>
 
-    <img src="img/img_index_1.jpg" class="img_index_1">\n
+    <img src="https://i.ibb.co/Mpq0Y94/img-index-1.jpg" class="img_index_1">\n
 '''
 footer = f'''    <footer id="main-footer">
       <p>&copy; 2022 por Adrián López</p>

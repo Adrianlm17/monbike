@@ -71,7 +71,7 @@ header = f'''    <header class="menu-header">
       </ul>
     </header>
 
-    <img src="https://i.ibb.co/Mpq0Y94/img-index-1.jpg" class="img_index_1" alt="Imagen Bicis con logo>\n
+    <img src="https://i.ibb.co/Mpq0Y94/img-index-1.jpg" class="img_index_1" alt="Imagen Bicis con logo">\n
 '''
 footer = f'''    <footer id="main-footer">
       <p>&copy; 2022 por Adrián López</p>

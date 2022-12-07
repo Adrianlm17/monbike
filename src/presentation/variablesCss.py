@@ -104,7 +104,7 @@ body {
 .tabla_general_bicis {
 	margin: 0 auto;
 	text-align: left;
-	background-image: url("img/general_bicis.png");
+	background-image: url("img/https://i.ibb.co/zPDstFT/general-bicis.jpg");
 	width: 50%;
 	font-family: sans-serif;
 	border-radius: 15px;
@@ -299,7 +299,7 @@ body {
 	/* TABLA PARA LA GENERAL BICIS*/
     .tabla_general_bicis {
         margin: 0 auto;
-        background-image: url("img/general_bicis.png");
+        background-image: url("https://i.ibb.co/zPDstFT/general-bicis.jpg");
         width: 90%;
         border-radius: 15px;
     }

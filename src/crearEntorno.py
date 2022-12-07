@@ -28,9 +28,8 @@ def creadorEntornoNecesario():
 
 
     # Crear archivos HTML
-    creadorArchivos("..\monbike\docs\index.html", "w")
-    creadorArchivos("..\monbike\docs\general.html", "w")
-    
+    creadorArchivos("..\monbike\docs\index.html")
+    creadorArchivos("..\monbike\docs\general.html")
+        
     # Crear archivos CSS
-    creadorArchivos("..\monbike\docs\style.css", "w")
- 
+    creadorArchivos("..\monbike\docs\style.css")

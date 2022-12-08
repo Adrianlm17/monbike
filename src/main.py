@@ -27,10 +27,12 @@ def ejecutarTrabajo():
     from presentation.crearIndexHtml import generarIndexHtml
     from presentation.crearGeneralHtml import generarPaginaTodasBicis
     from presentation.crearMTBHtml import MtbBicis
+    from presentation.crearElectricaHtml import ElectricasBicis
     from presentation.crearStyleCss import generarArchivoCss
     generarIndexHtml()
     generarPaginaTodasBicis()
     MtbBicis()
+    ElectricasBicis()
     generarArchivoCss()
     
     print("Todo se genero con exito!")

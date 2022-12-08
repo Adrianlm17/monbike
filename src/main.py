@@ -29,12 +29,14 @@ def ejecutarTrabajo():
     from presentation.crearMTBHtml import MtbBicis
     from presentation.crearElectricaHtml import ElectricasBicis
     from presentation.crearCarreteraHtml import CarreteraBicis
+    from presentation.crearPaseoHtml import PaseoBicis
     from presentation.crearStyleCss import generarArchivoCss
     generarIndexHtml()
     generarPaginaTodasBicis()
     MtbBicis()
     ElectricasBicis()
     CarreteraBicis()
+    PaseoBicis()
     generarArchivoCss()
     
     print("Todo se genero con exito!")

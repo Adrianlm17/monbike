@@ -26,9 +26,11 @@ def ejecutarTrabajo():
     # Generamos los archivos HTML y CSS
     from presentation.crearIndexHtml import generarIndexHtml
     from presentation.crearGeneralHtml import generarPaginaTodasBicis
+    from presentation.crearMTBHtml import MtbBicis
     from presentation.crearStyleCss import generarArchivoCss
     generarIndexHtml()
     generarPaginaTodasBicis()
+    MtbBicis()
     generarArchivoCss()
     
     print("Todo se genero con exito!")

@@ -48,7 +48,7 @@ def MtbBicis():
             mtb_html.write("        <a href='"+ bicis[i]["_id"] +".html'>ALQUILAR</a>\n")
             mtb_html.write(fin_div)
 
-            i += 1
+        i += 1
 
     mtb_html.write(fin_div_general)
     mtb_html.write(footer)

@@ -82,6 +82,72 @@ footer = f'''    <footer id="main-footer">
 body = "  <body>\n"
 fin_body = "  </body>\n"
 
+# Variables para la pagina index.html
+
+index = f'''    <h2 class="sub-titulo-monbike">
+      Alquiler de Bicicletas Eléctricas, de Paseo, de Montaña y de Carretera al mejor precio!!
+    </h2>
+
+    <br><br><br>
+
+    <table class="tabla_general_bicis">
+      <tr>
+        <td class="tabla_general_bicis_1">
+          <h2>BICICLETAS</h2>
+          <br>
+          <p>
+            Ahora también puedes ver las bicis que tenemos disponibles para ti!!!
+          </p>
+        </td>
+        <td class="img_tabla_general">
+          <a href="general.html" alt="Todas las bicis" class="button_general_bicis">Ver bicis</a>
+        </td>
+      </tr>
+    </table>
+
+    <br>
+
+    <h3 class="elige_monbike"> ¿Por qué MonBike?</h3>
+
+    <br>
+        
+    <div class="porque_monbike">
+        <h4>Gran variedad</h4>
+
+        <p>
+            ¡Te garantizamos una gran variedad de <b>alquiler de bicicletas en Mallorca!!</b><br>
+            Disponemos de bicicletas de bicis de paseo, eléctricas, de montaña y bicicletas de carretera.
+        </p>
+
+        <br>
+
+        <h4>Atención al cliente</h4>
+
+        <p>
+            Te ofrecemos asistencia en cualquier punto de Mallorca los 365 días al año.<br>
+            Tus vacaciones ciclistas deben ser para descansar y disfrutar del cicloturismo,<br>
+            solo elige la bici y nosotros nos encargamos del resto
+        </p>
+
+        <br>
+
+        <h4>Nos gusta el ciclismo</h4>
+
+        <p>
+            Además de disponer de las mejores bicicletas para su experiencia, contamos con un gran equipo de expertos en el sector, <br>
+            los cuales podrás llamar en cualquier momento y ellos te resolverán el problema, a demás, <br>
+            también te podrán recomendar rutas que nunca olvidaras!!
+        </p>
+
+    </div>
+
+    <br><br>
+
+    <!-- Agreo un pequeño video referente al ciclismo -->
+    <div style="text-align:center;">
+        <iframe src="https://www.youtube.com/embed/3W3X8vfssYo" width="650" height="350"></iframe>
+    </div>
+'''
 
 # Variables para la pagina donde aparece todas las bicis
 

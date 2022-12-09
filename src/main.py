@@ -30,6 +30,7 @@ def ejecutarTrabajo():
     from presentation.crearElectricaHtml import ElectricasBicis
     from presentation.crearCarreteraHtml import CarreteraBicis
     from presentation.crearPaseoHtml import PaseoBicis
+    from presentation.crearContacto import ContactoBicis
     from presentation.crearStyleCss import generarArchivoCss
     generarIndexHtml()
     generarPaginaTodasBicis()
@@ -37,6 +38,7 @@ def ejecutarTrabajo():
     ElectricasBicis()
     CarreteraBicis()
     PaseoBicis()
+    ContactoBicis()
     generarArchivoCss()
     
     print("Todo se genero con exito!")

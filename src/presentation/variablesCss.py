@@ -162,6 +162,7 @@ body {
 
 .img_index_1 {
 	width:100%;
+	margin-top: 5%;
 }
 
 /* Damos color y estilo de letra al subtitulo y lo centramos */ 
@@ -255,6 +256,33 @@ body {
 	border-radius: 10%;
 }
 
+/* Contacto*/
+
+.contactanos{
+	text-align: center;
+	font: oblique bold 25px cursive;
+}
+
+.formulario_bici {
+	display: block;
+	width:55%;
+	padding:16px;
+	border-radius:10px;
+	margin:auto;
+	text-align: center;
+	background-color:#ccc;
+	font-weight:bold;
+}
+
+.boton {
+	width: 35%;
+	height: 15%;
+}
+
+.boton:hover {
+	background-color: rgb(73, 161, 80);
+}
+
 /******************************** FOOTER **********************************/
 
 #main-footer {
@@ -262,7 +290,7 @@ body {
 	color: rgb(6, 53, 13);
 	text-align: center;
 	padding: 15px;
-	
+	margin-top: 5%;
 }
 
 
@@ -363,7 +391,7 @@ body {
 	/* IMAGEN MONBIKE */
 	.img_index_1 {
 		width:100%;
-		padding-top: 10%;
+		padding-bottom: 10%;
 	}
 
 	/* TABLA PARA LA GENERAL BICIS*/
@@ -439,6 +467,51 @@ body {
 		width: 85%;
 		height: 50%;
 		border-radius: 10%;
+	}
+
+	/* Contacto Móvil*/
+
+	.contactanos{
+		text-align: center;
+		font: oblique bold 50px cursive;
+		padding-bottom: 5%;
+	}
+
+	label {
+		font: oblique bold 35px cursive;
+	}
+
+	.formulario_dentro{
+		font: oblique bold 25px cursive;
+	}
+
+	.formulario_bici {
+		display: block;
+		width:55%;
+		padding:16px;
+		border-radius:10px;
+		margin:auto;
+		text-align: center;
+		background-color:#ccc;
+		font-weight:bold;
+		padding-bottom: 20%;
+	}
+
+	.boton {
+		width: 80%;
+		height: 15%;
+		font: oblique bold 35px cursive;
+	}
+	
+	.boton:hover {
+		background-color: rgb(73, 161, 80);
+	}
+
+	/****************** FOOTER MÓVIL *****************/
+	#main-footer p {
+
+		font: 27px cursive;
+		margin-top: 5%;
 	}
 }
 

@@ -157,3 +157,47 @@ fin_div = '      </div>\n'
 fin_div_general = '    </div>\n'
 br_global = "        <br>\n"
 fin_html = "</html>"
+
+# Variables para la pagina contacto.html
+
+contacto = f'''    <div class="formulario_bici">
+            
+    <br>
+    
+    <h2 class="contactanos">Contáctanos</h2>
+    
+    <br>
+    
+    <form method="get" action="index.html">
+        
+      <br>
+      <label>Nombre: </label><input type="text" name="usuario" class="formulario_dentro" required> <br>
+      <br>
+      <label>Apellidos: </label><input type="text" name="apellidos" class="formulario_dentro" required> <br>
+      <br>
+      <label>EMAIL: </label><input type="email" name="email" class="formulario_dentro" required> <br>
+      <br>
+      <label>Telefono: </label><input type="tel" name="telf" class="formulario_dentro" required> <br>
+      <br>
+      <label>Dirección: </label><input type="text" name="dirreción" placeholder="Calle , numero" class="formulario_dentro" required> <br>
+      <br>
+      <label>Fecha: </label><input type="date" name="trip-start" value="2022-12-13" class="formulario_dentro" required> <br>
+      <br><br>
+      <label>Comentario</label><br>
+      <br>
+      <textarea class="formulario_dentro" name="comentario" rows="5" cols="30" required>Escribe tu comentario </textarea><br>
+      
+      <br><br><br>
+
+      <input type="submit" value="Enviar" class="boton"> <br>
+      
+      <br>
+
+      <input type="reset" value="Restablecer formulario" class="boton"> <br>
+      <br>
+    </form>
+    
+</div>
+
+
+'''

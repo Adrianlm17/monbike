@@ -58,15 +58,15 @@ header = f'''    <header class="menu-header">
         </li>
         <li><a>Ubicación</a>
           <ul>
-            <li><a href="palma.html">Palma</a></li>
-            <li><a href="inca.html">Inca</a></li>
-            <li><a href="alcudia.html">Alcúdia</a></li>
-            <li><a href="manacor.html">Manacor</a></li>
-            <li><a href="arta.html">Artá</a></li>
-            <li><a href="pollensa.html">Pollensa</a></li>
-            <li><a href="felanix.html">Felanix</a></li>
-            <li><a href="soller.html">Soller</a></li>
-            <li><a href="marratxi.html">Marratxi</a></li>
+            <li><a href="Palma.html">Palma</a></li>
+            <li><a href="Inca.html">Inca</a></li>
+            <li><a href="Alcúdia.html">Alcúdia</a></li>
+            <li><a href="Manacor.html">Manacor</a></li>
+            <li><a href="Artá.html">Artá</a></li>
+            <li><a href="Pollensa.html">Pollensa</a></li>
+            <li><a href="Felanix.html">Felanix</a></li>
+            <li><a href="Soller.html">Soller</a></li>
+            <li><a href="Marratxi.html">Marratxi</a></li>
           </ul>
         </li>
         <li><a href="contacto.html">Contacto</a></li>

@@ -27,11 +27,13 @@ def ejecutarTrabajo():
     from presentation.crearIndexHtml import generarIndexHtml
     from presentation.crearGeneralHtml import generarPaginaTodasBicis
     from presentation.crearTiposBiciHtml import generarTipoBici
+    from presentation.crearMarcasBiciHtml import generarMarcaBici
     from presentation.crearContacto import ContactoBicis
     from presentation.crearStyleCss import generarArchivoCss
     generarIndexHtml()
     generarPaginaTodasBicis()
     generarTipoBici()
+    generarMarcaBici()
     ContactoBicis()
     generarArchivoCss()
     

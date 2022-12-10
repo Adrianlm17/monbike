@@ -83,78 +83,6 @@ css = """
 
 /**********************************  BODY  ***************************************/
 
-/* Oculto el boton de navegador de móvil para ordenadores */
-.boton_navegador_img, .menu_input {
-	display: none;
-}
-
-.menu-header { 
-	background-color: rgb(165, 247, 175);
-	height: 75px;
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	border-bottom: 1px solid white;
-	box-shadow: 10px 0 25px black;
-	position: fixed;
-	
-}
-
-.menu-principal {
-	list-style: none;
-	display: flex;
-}
-
-
-.menu-principal > li > a {
-	display: block;
-	padding: 25px 25px;
-	color: rgb(0, 0, 0);
-	text-decoration: none;
-	font: oblique bold 20px cursive;
-}
-
-.menu-principal > li:hover {
-	background-color: rgb(15, 92, 8);
-	border-radius: 10px;
-}
-
-.menu-principal li ul {
-	position: absolute;
-	display: none;
-	background-color: rgb(165, 247, 175);
-	list-style: none;
-	border-bottom: 2px solid white;
-	box-shadow: 8 px 8px 10px black;
-	border-radius: 10px;
-}
-
-.menu-principal li ul li a{
-	text-decoration: none;
-	padding: 10px 15px;
-	color: rgb(0, 0, 0);
-	display: block;
-	font: oblique bold 15px cursive;
-}
-
-.menu-principal li:hover > ul {
-	display: block;
-}
-
-.menu-principal li ul > li:hover {
-	background-color: rgb(15, 92, 8);
-	border-radius: 10px;
-}
-
-/* Logo MonBike */
-.logo {
-	display: flex;
-	height: 100%;
-}
-
-/**********************************  BODY  ***************************************/
-
 body {
 	margin: 0px;
 	background-color: beige;
@@ -163,6 +91,7 @@ body {
 .img_index_1 {
 	width:100%;
 	margin-top: 3%;
+	margin-bottom: 3%;
 	padding-bottom: 5%;
 }
 
@@ -450,8 +379,13 @@ body {
 		color: rgb(48, 121, 48);
 	}
 	
+	.general_una_bici h2 {
+		font: oblique bold 15px cursive;
+		color: rgb(48, 121, 48);
+	}
+
 	.general_una_bici p {
-		font: oblique bold 10px cursive;
+		font: oblique bold 11px cursive;
 		color: rgb(79, 172, 79);
 	}
 
@@ -462,6 +396,7 @@ body {
 		color:rgb(0, 0, 0);
 		text-transform:uppercase;
 		padding:3% 5%;
+		font: oblique bold 13px cursive;
 	}
 	
 	.img_varias_bicis {
@@ -512,7 +447,6 @@ body {
 	#main-footer p {
 
 		font: 27px cursive;
-		margin-top: 5%;
 	}
 }
 

@@ -92,6 +92,7 @@ body {
 	width:100%;
 	margin-top: 3%;
 	margin-bottom: 3%;
+	padding-bottom: 5%;
 }
 
 /* Damos color y estilo de letra al subtitulo y lo centramos */ 

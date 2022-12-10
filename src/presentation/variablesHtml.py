@@ -36,9 +36,9 @@ header = f'''    <header class="menu-header">
         <li><a>Tipos</a>
           <ul class="sub_menu">
             <li><a href="mtb.html">MTB</a></li>
-            <li><a href="electrica.html">Eléctrica</a></li>
+            <li><a href="eléctrica.html">Eléctrica</a></li>
             <li><a href="carretera.html">Carretera</a></li>
-            <li><a href="paseo.html">Paseo</a></li>
+            <li><a href="city.html">City</a></li>
           </ul>
         </li>
         <li><a>Marcas</a>

@@ -43,17 +43,17 @@ header = f'''    <header class="menu-header">
         </li>
         <li><a>Marcas</a>
           <ul>
-            <li><a href="vanrysel.html">VAN RYSEL</a></li>
-            <li><a href="triban.html">TRIBAN</a></li>
-            <li><a href="deporvillage.html">Deporvillage</a></li>
-            <li><a href="focus.html">Focus</a></li>
-            <li><a href="motion.html">Motion</a></li>
-            <li><a href="ncm.html">NCM</a></li>
-            <li><a href="riverside.html">Riverside</a></li>
-            <li><a href="rockrider.html">Rockrider</a></li>
-            <li><a href="windee.html">Windee</a></li>
-            <li><a href="elops.html">Elops</a></li>
-            <li><a href="shimano.html">SHIMANO</a></li>
+            <li><a href="VAN RYSEL.html">VAN RYSEL</a></li>
+            <li><a href="TRIBAN.html">TRIBAN</a></li>
+            <li><a href="Deporvillage.html">Deporvillage</a></li>
+            <li><a href="Focus.html">Focus</a></li>
+            <li><a href="Motion.html">Motion</a></li>
+            <li><a href="NCM.html">NCM</a></li>
+            <li><a href="Riverside.html">Riverside</a></li>
+            <li><a href="Rockrider.html">Rockrider</a></li>
+            <li><a href="Windee.html">Windee</a></li>
+            <li><a href="Elops.html">Elops</a></li>
+            <li><a href="SHIMANO.html">SHIMANO</a></li>
           </ul>
         </li>
         <li><a>Ubicación</a>

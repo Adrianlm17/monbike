@@ -186,6 +186,53 @@ body {
 	border-radius: 10%;
 }
 
+/* UNICA BICI */
+
+.titulo_unica_bici {
+	font: oblique bold 40px cursive;
+	color: rgb(48, 121, 48);
+	text-align: center;
+}
+
+.unica_bici{ 
+	display: flex;
+}
+
+.img_unica_bici {
+	width: 38%;
+	padding-left: 3%;
+	padding-top: 5%;
+	padding-bottom: 7%;
+	display: flex;
+	transition: transform .2s;
+}
+
+.img_unica_bici:hover {
+	padding-top: 5%;
+	padding-bottom: 7%;
+	display: flex;
+	transform: scale(1.2);
+}
+
+.texto_unica_bici {
+	padding-top: 5%;
+	padding-left: 10%;
+	padding-bottom: 3%;
+	text-align: center;
+}
+
+.alquilar_bici {
+	display: block;
+	text-decoration: none;
+	background-color:#76a2fb;
+	border-radius:1em;
+	color:rgb(0, 0, 0);
+	text-transform:uppercase;
+	padding:2% 5%;
+	margin-left: 45%;
+	margin-right: 40%;
+}
+
 /* Contacto*/
 
 .contactanos{
@@ -441,6 +488,53 @@ body {
 	
 	.boton:hover {
 		background-color: rgb(73, 161, 80);
+	}
+
+	/* UNICA BICI */
+	.unica_bici{ 
+		display: block;
+	}
+
+	.titulo_unica_bici {
+		font: oblique bold 40px cursive;
+		color: rgb(48, 121, 48);
+		text-align: center;
+	}
+
+	.img_unica_bici {
+		width: 50%;
+		margin: 0 auto;
+		padding-top: 5%;
+		display: block;
+		transition: transform .2s;
+	}
+
+	.img_unica_bici:hover {
+		padding-top: 5%;
+		padding-bottom: 7%;
+		display: block;
+		transform: scale(1.5);
+	}
+
+	.texto_unica_bici {
+		padding-top: 5%;
+		padding-left: 10%;
+		padding-right: 10%;
+		padding-bottom: 10%;
+		text-align: center;
+		display: block;
+	}
+
+	.alquilar_bici {
+		margin: 0 auto;
+		display: block;
+		text-decoration: none;
+		background-color:#76a2fb;
+		border-radius:1em;
+		color:rgb(0, 0, 0);
+		text-transform:uppercase;
+		margin-left: 35%;
+		margin-right: 35%;
 	}
 
 	/****************** FOOTER MÓVIL *****************/

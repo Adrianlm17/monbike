@@ -11,7 +11,7 @@ bicis = importarDatos()
 
 
 def ContactoBicis():
-    contacto_html = open("../monbike/docs/contacto.html", "w", encoding="utf-8")
+    contacto_html = open("../monbike/docs/contacto.html", "a", encoding="utf-8")
     
     # HEAD del HTML
     contacto_html.write(head)

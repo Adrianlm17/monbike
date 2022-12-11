@@ -298,5 +298,20 @@
         "tipo de frenos": "V-Brake",
         "img": "https://contents.mediadecathlon.com/m5419674/k$a70f29effa74ced3f5e632bca44df671/sq/bicicleta-trekking-paseo-shimano-hybrid-28-alu-18v-susp-delant.jpg?format=auto&f=800x0",
         "seguro": "No"
+    },
+    {
+        "_id": "6395de20479df3c633b3475f",
+        "nombre": "Bicicleta urbana cuadro bajo Elops 100 negro",
+        "precio": "13",
+        "ubicación": "Palma",
+        "stock": "21",
+        "material": "aluminio",
+        "marca de bici": "Elops",
+        "peso": "15,3 kg",
+        "img": "https://contents.mediadecathlon.com/p1604302/k$41804e5a03d4ecfbbf2a16a20e5c0862/sq/bicicleta-urbana-cuadro-bajo-elops-100-negro.jpg?format=auto&f=800x0",
+        "tipo de bici": "city",
+        "seguro": "No",
+        "talla": "M",
+        "tipo de frenos": "V-Brake"
     }
 ]

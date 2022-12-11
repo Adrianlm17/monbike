@@ -31,17 +31,17 @@ def generarPaginaTodasBicis():
     i = 0
     for bici in bicis:
         general_html.write(general_unica_bici)
-        general_html.write("        <img src='"+ bicis[i]["img"] +"' class='img_varias_bicis'>\n")
+        general_html.write("        <img src='"+ bicis[i]["img"] +"' class='img_varias_bicis' alt='imagen bici general'>\n")
         general_html.write("        <h2>"+ bicis[i]["nombre"] +"</h2>\n")
 
         # Agregamos variables segun el descuento de los dias de alquiler
         descuento5dias = int(bicis[i]["precio"]) - 2
-        descuento10dias = int(bicis[i]["precio"]) - 1
-        descuento15dias = int(bicis[i]["precio"]) - 3
-        descuento30dias = int(bicis[i]["precio"]) - 5
+        descuento10dias = int(bicis[i]["precio"]) - 3
+        descuento15dias = int(bicis[i]["precio"]) - 4
+        descuento30dias = int(bicis[i]["precio"]) - 6
 
         # Escribe el precio con su respectivo descuento en HTML
-        general_html.write('        <p>\n          1 Día   - ' + bicis[i]["precio"] + '€\dia <br>\n          5 Días  - ' + str(descuento5dias) + '€\dia <br>\n          10 Días  - ' + str(descuento10dias) + '€\dia <br>\n          15 Días - ' + str(descuento15dias) + '€\dia <br>\n          30 Días - ' + str(descuento30dias) + '€\dia\n        </p>\n')
+        general_html.write('        <p>\n          1 Día   - ' + bicis[i]["precio"] + '€ <br>\n          5 Días  - ' + str(descuento5dias) + '€ <br>\n          10 Días  - ' + str(descuento10dias) + '€ <br>\n          15 Días - ' + str(descuento15dias) + '€ <br>\n          30 Días - ' + str(descuento30dias) + '€\n        </p>\n')
         
         general_html.write(br_global)
         general_html.write("        <a href='"+ bicis[i]["_id"] +".html'>ALQUILAR</a>\n")

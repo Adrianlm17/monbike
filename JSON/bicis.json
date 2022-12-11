@@ -7,12 +7,12 @@
         "stock": "134",
         "material": "carbon",
         "marca de bici": "VAN RYSEL",
-        "tallas": "M",
         "peso": "7,28 kg",
         "img": "https://contents.mediadecathlon.com/p1990093/k$af39175e357bc14813feaba87898425d/sq/bicicleta-de-carretera-carbono-ultegra-van-rysel-edr-cf-negro.jpg?f=720x720",
-        "tipo de freno": "freno de disco",
         "tipo de bici": "carretera",
-        "seguro": "Si"
+        "seguro": "Si",
+        "talla": "M",
+        "tipo de frenos": "freno de disco"
     },
     {
         "_id": "6384fabd6b1b912573be8359",

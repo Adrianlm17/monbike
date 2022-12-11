@@ -201,3 +201,12 @@ contacto = f'''    <div class="formulario_bici">
 
 
 '''
+
+# Variables para la pagina individual de cada bici
+
+dev_unicaBici = "    <div class='unica_bici'>\n"
+dev_unicaBici_fin = "    </div>\n"
+p_unicaBici = '      <p class="texto_unica_bici">\n'
+p_unicaBici_fin = '      </p>\n'
+a_unicaBici = '    <a href="index.html" class="alquilar_bici">ALQUILAR</a>\n'
+br_unicaBici = '    <br>\n'

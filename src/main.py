@@ -26,17 +26,19 @@ def ejecutarTrabajo():
     # Generamos los archivos HTML y CSS
     from presentation.crearIndexHtml import generarIndexHtml
     from presentation.crearGeneralHtml import generarPaginaTodasBicis
-    from presentation.crearMTBHtml import MtbBicis
-    from presentation.crearElectricaHtml import ElectricasBicis
-    from presentation.crearCarreteraHtml import CarreteraBicis
-    from presentation.crearPaseoHtml import PaseoBicis
+    from presentation.crearTiposBiciHtml import generarTipoBici
+    from presentation.crearMarcasBiciHtml import generarMarcaBici
+    from presentation.crearUbicacionBiciHtml import generarUbicacionesBici
+    from presentation.crearContacto import ContactoBicis
+    from presentation.crearUnicaBiciHtml import generarUnicaBiciHtml
     from presentation.crearStyleCss import generarArchivoCss
     generarIndexHtml()
     generarPaginaTodasBicis()
-    MtbBicis()
-    ElectricasBicis()
-    CarreteraBicis()
-    PaseoBicis()
+    generarTipoBici()
+    generarMarcaBici()
+    generarUbicacionesBici()
+    generarUnicaBiciHtml()
+    ContactoBicis()
     generarArchivoCss()
     
     print("Todo se genero con exito!")

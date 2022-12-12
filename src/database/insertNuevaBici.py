@@ -20,6 +20,7 @@ def insertNuevaBici():
     frenoBici = input("Que tipo de frenos tiene? ")
     imgBici = input("Escriba la URL de la imagen: ")
     seguroBici = input("Tiene seguro? ")
+    empresaBici = input("Que empresa la alquila?")
 
     # Llamamos desde la variable de entorno la URL de la API
 
@@ -48,6 +49,7 @@ def insertNuevaBici():
         "seguro": seguroBici,
         "talla": tallaBici,
         "tipo de frenos": frenoBici,
+        "empresa": empresaBici
         }
     })
 

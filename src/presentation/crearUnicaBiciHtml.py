@@ -40,7 +40,7 @@ def generarUnicaBiciHtml():
         descuento15dias = int(bicis[i]["precio"]) - 4
         descuento30dias = int(bicis[i]["precio"]) - 6
 
-        biciUnica_Html.write(f'''        Esta bicicleta'''+ bicis[i]["tipo de bici"]+ f''', cumple con las siguientes características:<br>
+        biciUnica_Html.write(f'''        Esta bicicleta'''+ bicis[i]["tipo de bici"]+ f''' esta ofrecida por '''+ bicis[i]["empresa"]+ f''' y cumple con las siguientes características:<br>
         <br>
         Material: Fabricada con un material de '''+ bicis[i]["material"]+ f'''. <br>
         <br>

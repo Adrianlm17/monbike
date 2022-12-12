@@ -1,5 +1,12 @@
 # Al ejecutar este archivo se creara todo automaticamente
 
+# Importamos webbrowser
+import webbrowser
+
+
+
+
+
 
 def ejecutarTrabajo():
 
@@ -18,6 +25,7 @@ def ejecutarTrabajo():
     # Agregamos la Barricada
     from verificarEntorno import verificarArchivoNecesario
     verificarArchivoNecesario()
+    print("Entorno creado y verificado con exito!")
 
     # Importamos el contenido JSON
     from presentation.importJson import importarDatos
@@ -45,4 +53,117 @@ def ejecutarTrabajo():
 
 
 
-ejecutarTrabajo()
+
+
+
+
+
+
+
+
+
+# ------------------------------------ MENU MONBIKE -------------------------------------
+
+def menuMonBike():
+    
+    opcionMonBike = input(f'''--------------- MONBIKE ---------------
+|                                     |
+|                                     |
+|    Bienvenid@, Este es el Menú      |
+|               MONBIKE!              |
+|                                     |
+|                                     |
+|    Indica que deseas hacer de las   |
+|   siguientes opciones disponibles:  |
+|                                     |
+|   1. Insertar una nueva Bici        |
+|   2. Eliminar una Bici              |
+|   3. Modificar una Bici             |
+|   4. Ejecutar la pagina web         |
+|   5. Ver la pagina web              |
+|   6. Salir del Menú                 |
+|                                     |
+--------------------------------------- 
+
+
+''')
+
+    if opcionMonBike == "1":
+        
+        # Funcion crear nueva bici
+        from database.insertNuevaBici import insertNuevaBici
+        insertNuevaBici()
+        
+        # Preguntamos al usuario si quiere seguir en el menu o no
+        MenuMonBike = input("Deseas volver al Menú MonBike (S)/(N): ")
+
+        if MenuMonBike == "S" or MenuMonBike == "Si" or MenuMonBike == "SI" or MenuMonBike == "s" or MenuMonBike == "si":
+            menuMonBike()
+        else:
+            print("Hasta pronto!")
+            exit
+
+    elif opcionMonBike == "2":
+
+        # Funcion eliminar una bici
+        from database.eliminarBici import eliminarBici
+        eliminarBici()
+
+        # Preguntamos al usuario si quiere seguir en el menu o no
+        MenuMonBike = input("Deseas volver al Menú MonBike (S)/(N): ")
+
+        if MenuMonBike == "S" or MenuMonBike == "Si" or MenuMonBike == "SI" or MenuMonBike == "s" or MenuMonBike == "si":
+            menuMonBike()
+        else:
+            print("Hasta pronto!")
+            exit
+
+    elif opcionMonBike == "3":
+
+        # Funcion modificar una bici
+        from database.modificarBici import modificarBici
+        modificarBici()
+    
+        # Preguntamos al usuario si quiere seguir en el menu o no
+        MenuMonBike = input("Deseas volver al Menú MonBike (S)/(N): ")
+
+        if MenuMonBike == "S" or MenuMonBike == "Si" or MenuMonBike == "SI" or MenuMonBike == "s" or MenuMonBike == "si":
+            menuMonBike()
+        else:
+            print("Hasta pronto!")
+            exit
+
+    elif opcionMonBike == "4":
+        ejecutarTrabajo()
+
+        # Preguntamos al usuario si quiere seguir en el menu o no
+        MenuMonBike = input("Deseas volver al Menú MonBike (S)/(N): ")
+
+        if MenuMonBike == "S" or MenuMonBike == "Si" or MenuMonBike == "SI" or MenuMonBike == "s" or MenuMonBike == "si":
+            menuMonBike()
+        else:
+            print("Disfruta de la web y hasta pronto!")
+            exit
+
+    elif opcionMonBike == "5":
+        webbrowser.open_new_tab('https://adrianlm17.github.io/monbike/')
+
+        # Preguntamos al usuario si quiere seguir en el menu o no
+        MenuMonBike = input("Deseas volver al Menú MonBike (S)/(N): ")
+
+        if MenuMonBike == "S" or MenuMonBike == "Si" or MenuMonBike == "SI" or MenuMonBike == "s" or MenuMonBike == "si":
+            menuMonBike()
+        else:
+            print("Disfruta de la web y hasta pronto!")
+            exit
+
+    elif opcionMonBike == "6":
+        print("Hasta pronto!")
+        exit
+
+    else:
+        print("Selecciona un numero valido!")
+        menuMonBike()
+
+
+menuMonBike()

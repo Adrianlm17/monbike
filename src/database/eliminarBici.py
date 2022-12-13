@@ -33,12 +33,6 @@ def eliminarBici():
         'api-key': API_KEY, 
     }
 
-    print("Bicicleta eliminada con existo!")
+    response = requests.request("POST", url, headers=headers, data=payload,)
 
-    modificarOpcion = input("Deseas eliminar alguna bici mas? (S)/(N)")
-
-    if modificarOpcion == "S":
-        eliminarBici()
-    
-    else:
-        response = requests.request("POST", url, headers=headers, data=payload,)
+eliminarBici()

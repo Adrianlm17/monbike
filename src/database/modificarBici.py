@@ -40,13 +40,6 @@ def modificarBici():
         'api-key': API_KEY, 
     }
 
-    print("Bicicleta modificada con existo!")
+    response = requests.request("POST", url, headers=headers, data=payload,)
 
-    modificarOpcion = input("Deseas modificar algo mas? (S)/(N)")
-
-    if modificarOpcion == "S":
-        modificarBici()
-    
-    else:
-        response = requests.request("POST", url, headers=headers, data=payload,)
-        
+modificarBici()

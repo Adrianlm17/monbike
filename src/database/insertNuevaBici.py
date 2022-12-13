@@ -59,13 +59,7 @@ def insertNuevaBici():
         'api-key': API_KEY, 
     }
 
+    response = requests.request("POST", url, headers=headers, data=payload,)
     print("Bicicleta creada con existo! Aqui tienes su ID:" + response.text)
-
-    inserarNuevaBicicleta = input("Deseas añadir alguna bici mas? (S)/(N)")
-
-    if inserarNuevaBicicleta == "S":
-        insertNuevaBici()
-    
-    else:
-        response = requests.request("POST", url, headers=headers, data=payload,)
         
+insertNuevaBici()

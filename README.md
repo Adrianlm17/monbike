@@ -96,13 +96,13 @@ Para poder usar el programa, se recomienda usar [**venv**](https://docs.python.o
 
 ### Uso
 
-MonBike está pensado para facilitar el trabajo tanto al usuario como al programador/trabajador, así que con solo ejecutar el archivo **[main.py](https://github.com/Adrianlm17/monbike/blob/main/src/main.py)** que se encuentra en la carpeta "src", ya se iniciara automáticamente todo!
+MonBike está pensado para facilitar el trabajo tanto al usuario como al programador/trabajador, así que con solo ejecutar el comando **python3 .\typer\MonBike.py --help** nos mostrara todas las opciones que nos permite realiar MonBike.
 
 ```
-python3 src/main.py
+python3 .\typer\MonBike.py --help
 ```
 
-![Menú MonBike](https://i.ibb.co/3v1kxZ6/menu-Mon-Bike.png)
+![Typer MonBike](https://i.ibb.co/BZWmBtP/typer-Mon-Bike.png)
 
 
 ## Descripción Técnica
@@ -110,11 +110,11 @@ python3 src/main.py
 
 ### Arquitectura de la aplicación
 
-![arquitecturaMonBike](https://i.ibb.co/2yWgPK3/arquitectura-Mon-Bike.png)
+![arquitecturaMonBike](https://i.ibb.co/LCRGfF2/arquitectura-Mon-Bike.png)
 
 - **Presentación**
 
-    - **main.py** programa principal.
+    - **monbike.py** programa principal.
 
 - **Servicios**
 
@@ -126,6 +126,7 @@ python3 src/main.py
     - **insertNuevaBici** encargado de insertar una nueva bici.
     - **eliminarBici** encargado de eliminar una bici.
     - **modificarBici** encargado de modificar el contenido de una bici.
+    - **verbici** encargado de mostrar las bicics que le indiques.
 
 - **Parte Externa**
 
@@ -155,6 +156,8 @@ python3 src/main.py
 - **[Markdown](https://markdown.es/)** es un lenguaje de marcado ligero.
 
 - **[GitHub Pages](https://pages.github.com/)** es un servicio de alojamiento de sitios estáticos que toma archivos HTML, CSS y JavaScript directamente de un repositorio en GitHub
+
+- **[Typer](https://typer.tiangolo.com/)** es una librería para crear aplicaciones CLI basada en sugerencias de tipo de Python 3.6+.
 
 
 
@@ -317,7 +320,6 @@ A pesar de haber empezado tarde y haber realizado un trabajo de parejas totalmen
 ### Mejoras
 
 * Implementar un sistema de notificación al Usuario cuando mande un formulario de contacto o alquile una bici.
-* Actualmente, estoy trabajando en la implantación de [Typer](https://typer.tiangolo.com/)
 
 
 

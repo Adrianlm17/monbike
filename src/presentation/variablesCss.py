@@ -18,7 +18,7 @@ css = """
 }
 
 .menu-header { 
-	background-color: rgb(165, 247, 175);
+	background-color: #5aba70;
 	height: 75px;
 	width: 100%;
 	display: flex;
@@ -41,7 +41,7 @@ css = """
 	padding: 25px 25px;
 	color: rgb(0, 0, 0);
 	text-decoration: none;
-	font: oblique bold 20px cursive;
+	font: oblique bold 25px cursive;
 }
 
 .menu-principal > li:hover {
@@ -85,7 +85,7 @@ css = """
 
 body {
 	margin: 0px;
-	background-color: beige;
+	background-color: #ddeae0;
 }
 
 .img_index_1 {
@@ -160,8 +160,11 @@ body {
 }
 
 .general_una_bici{
-	padding-left: 5%;
-	padding-top: 10%;
+	padding: 3%;
+	border: 2px solid rgb(114 204 137);
+	margin: 21px;
+	background-color: #dff2d8;
+	box-shadow: 15px 15px 15px 5px;
 	text-align: center;
 	color: rgb(48, 121, 48);
 }
@@ -263,7 +266,7 @@ body {
 /******************************** FOOTER **********************************/
 
 #main-footer {
-	background: rgb(165, 247, 175);
+	background: #5aba70;
 	color: rgb(6, 53, 13);
 	text-align: center;
 	padding: 15px;
